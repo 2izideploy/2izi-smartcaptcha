@@ -1,0 +1,199 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 2IZI SmartCaptcha 1.0.10\n"
+"Report-Msgid-Bugs-To: https://2izi.ru/\n"
+"POT-Creation-Date: 2026-08-23 15:30+1000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: 2izi-smartcaptcha\n"
+
+msgid "2IZI SmartCaptcha"
+msgstr ""
+
+msgid "2IZI SmartCaptcha for Yandex"
+msgstr ""
+
+msgid "Automatic — follow WordPress language"
+msgstr ""
+
+msgid "Block protected submissions if Yandex SmartCaptcha cannot be reached"
+msgstr ""
+
+msgid "CAPTCHA verification"
+msgstr ""
+
+msgid "CAPTCHA verification failed due to a service error. Please try again."
+msgstr ""
+
+msgid "CAPTCHA verification failed. Please try again."
+msgstr ""
+
+msgid "CAPTCHA verification service is temporarily unavailable. Please try again."
+msgstr ""
+
+msgid "Check connection"
+msgstr ""
+
+msgid "Checking…"
+msgstr ""
+
+msgid "Checkout"
+msgstr ""
+
+msgid "Choose which standard WordPress forms require CAPTCHA verification."
+msgstr ""
+
+msgid "Client key"
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "Connection"
+msgstr ""
+
+msgid "Connection test"
+msgstr ""
+
+msgid "Connection to Yandex SmartCaptcha is available and the saved key format is valid."
+msgstr ""
+
+msgid "Disabled by default. Test carefully with your checkout configuration."
+msgstr ""
+
+msgid "Enable protection for Contact Form 7 forms"
+msgstr ""
+
+msgid "Enter both Client key and Server key."
+msgstr ""
+
+msgid "Enter the Client key and Server key from Yandex SmartCaptcha to enable protection."
+msgstr ""
+
+msgid "Insufficient permissions."
+msgstr ""
+
+msgid "Integrations"
+msgstr ""
+
+msgid "Keys are created in the Yandex Cloud SmartCaptcha console."
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Lost password"
+msgstr ""
+
+msgid "Please complete the CAPTCHA verification."
+msgstr ""
+
+msgid "Product reviews"
+msgstr ""
+
+msgid "Protect WordPress forms with Yandex SmartCaptcha."
+msgstr ""
+
+msgid "Protect checkout"
+msgstr ""
+
+msgid "Protect comments from guests"
+msgstr ""
+
+msgid "Protect customer login"
+msgstr ""
+
+msgid "Protect customer password reset"
+msgstr ""
+
+msgid "Protect customer registration"
+msgstr ""
+
+msgid "Protect product reviews from guests"
+msgstr ""
+
+msgid "Protect the login form"
+msgstr ""
+
+msgid "Protect the password reset form"
+msgstr ""
+
+msgid "Protect the registration form"
+msgstr ""
+
+msgid "Public site key used by the SmartCaptcha widget."
+msgstr ""
+
+msgid "Recommended for stronger protection. If disabled, a temporary Yandex service outage will not block protected forms."
+msgstr ""
+
+msgid "Registration"
+msgstr ""
+
+msgid "Request failed. Please try again."
+msgstr ""
+
+msgid "Saved — leave blank to keep"
+msgstr ""
+
+msgid "Secret key used only for server-side token verification. It is never sent to visitors."
+msgstr ""
+
+msgid "Security"
+msgstr ""
+
+msgid "Server key"
+msgstr ""
+
+msgid "Settings saved."
+msgstr ""
+
+msgid "SmartCaptcha is not configured."
+msgstr ""
+
+msgid "SmartCaptcha language"
+msgstr ""
+
+msgid "The key format does not look like current Yandex SmartCaptcha keys."
+msgstr ""
+
+msgid "The plugin interface follows the WordPress admin language. The SmartCaptcha widget itself supports the languages provided by Yandex."
+msgstr ""
+
+msgid "The site administrator is responsible for reviewing the applicable Yandex Cloud terms and privacy documentation and for reflecting this processing in the site privacy policy."
+msgstr ""
+
+msgid "These options are used only when WooCommerce is active."
+msgstr ""
+
+msgid "This site uses Yandex SmartCaptcha to protect forms from automated abuse and spam. When a protected form is displayed or submitted, technical data required by the service may be transmitted to Yandex Cloud, including the CAPTCHA token and, during server-side verification, the visitor IP address."
+msgstr ""
+
+msgid "Verification service failure"
+msgstr ""
+
+msgid "WooCommerce protection"
+msgstr ""
+
+msgid "WordPress protection"
+msgstr ""
+
+msgid "Yandex SmartCaptcha endpoint returned an unexpected HTTP status."
+msgstr ""
+
+
+msgid "Please confirm that you are not a robot."
+msgstr ""
+
+msgid "CAPTCHA verification has expired. Please complete it again."
+msgstr ""
+
+msgid "CAPTCHA could not be loaded. Check your connection and try again."
+msgstr ""
+
+msgid "CAPTCHA could not be loaded. Please refresh the page and try again."
+msgstr ""
+
+msgid "The saved Client key is used to load the real Yandex SmartCaptcha widget here."
+msgstr ""

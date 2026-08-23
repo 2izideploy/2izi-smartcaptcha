@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 2IZI SmartCaptcha 1.0.10\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "2IZI SmartCaptcha"
+msgstr "2IZI SmartCaptcha"
+
+msgid "2IZI SmartCaptcha for Yandex"
+msgstr "2IZI SmartCaptcha для Яндекс"
+
+msgid "Automatic — follow WordPress language"
+msgstr "Автоматически — язык WordPress"
+
+msgid "Block protected submissions if Yandex SmartCaptcha cannot be reached"
+msgstr "Блокировать защищённые отправки, если Yandex SmartCaptcha недоступна"
+
+msgid "CAPTCHA verification"
+msgstr "Проверка CAPTCHA"
+
+msgid "CAPTCHA verification failed due to a service error. Please try again."
+msgstr "Не удалось проверить CAPTCHA из-за ошибки сервиса. Попробуйте ещё раз."
+
+msgid "CAPTCHA verification failed. Please try again."
+msgstr "Проверка CAPTCHA не пройдена. Попробуйте ещё раз."
+
+msgid "CAPTCHA verification service is temporarily unavailable. Please try again."
+msgstr "Сервис проверки CAPTCHA временно недоступен. Попробуйте ещё раз."
+
+msgid "Check connection"
+msgstr "Проверить подключение"
+
+msgid "Checking…"
+msgstr "Проверка…"
+
+msgid "Checkout"
+msgstr "Оформление заказа"
+
+msgid "Choose which standard WordPress forms require CAPTCHA verification."
+msgstr "Выберите стандартные формы WordPress, для которых требуется проверка CAPTCHA."
+
+msgid "Client key"
+msgstr "Ключ клиента"
+
+msgid "Comments"
+msgstr "Комментарии"
+
+msgid "Connection"
+msgstr "Подключение"
+
+msgid "Connection test"
+msgstr "Проверка подключения"
+
+msgid "Connection to Yandex SmartCaptcha is available and the saved key format is valid."
+msgstr "Подключение к Yandex SmartCaptcha доступно, формат сохранённых ключей корректен."
+
+msgid "Disabled by default. Test carefully with your checkout configuration."
+msgstr "По умолчанию отключено. Обязательно протестируйте с вашей конфигурацией оформления заказа."
+
+msgid "Enable protection for Contact Form 7 forms"
+msgstr "Включить защиту форм Contact Form 7"
+
+msgid "Enter both Client key and Server key."
+msgstr "Введите ключ клиента и серверный ключ."
+
+msgid "Enter the Client key and Server key from Yandex SmartCaptcha to enable protection."
+msgstr "Введите ключ клиента и серверный ключ Yandex SmartCaptcha, чтобы включить защиту."
+
+msgid "Insufficient permissions."
+msgstr "Недостаточно прав."
+
+msgid "Integrations"
+msgstr "Интеграции"
+
+msgid "Keys are created in the Yandex Cloud SmartCaptcha console."
+msgstr "Ключи создаются в консоли Yandex Cloud SmartCaptcha."
+
+msgid "Login"
+msgstr "Вход"
+
+msgid "Lost password"
+msgstr "Восстановление пароля"
+
+msgid "Please complete the CAPTCHA verification."
+msgstr "Пожалуйста, пройдите проверку CAPTCHA."
+
+msgid "Product reviews"
+msgstr "Отзывы о товарах"
+
+msgid "Protect WordPress forms with Yandex SmartCaptcha."
+msgstr "Защита форм WordPress с помощью Yandex SmartCaptcha."
+
+msgid "Protect checkout"
+msgstr "Защищать оформление заказа"
+
+msgid "Protect comments from guests"
+msgstr "Защищать комментарии гостей"
+
+msgid "Protect customer login"
+msgstr "Защищать вход покупателей"
+
+msgid "Protect customer password reset"
+msgstr "Защищать восстановление пароля покупателей"
+
+msgid "Protect customer registration"
+msgstr "Защищать регистрацию покупателей"
+
+msgid "Protect product reviews from guests"
+msgstr "Защищать отзывы гостей о товарах"
+
+msgid "Protect the login form"
+msgstr "Защищать форму входа"
+
+msgid "Protect the password reset form"
+msgstr "Защищать форму восстановления пароля"
+
+msgid "Protect the registration form"
+msgstr "Защищать форму регистрации"
+
+msgid "Public site key used by the SmartCaptcha widget."
+msgstr "Публичный ключ сайта, используемый виджетом SmartCaptcha."
+
+msgid "Recommended for stronger protection. If disabled, a temporary Yandex service outage will not block protected forms."
+msgstr "Рекомендуется для более строгой защиты. Если отключить эту опцию, временная недоступность сервиса Yandex не будет блокировать защищённые формы."
+
+msgid "Registration"
+msgstr "Регистрация"
+
+msgid "Request failed. Please try again."
+msgstr "Ошибка запроса. Попробуйте ещё раз."
+
+msgid "Saved — leave blank to keep"
+msgstr "Сохранён — оставьте поле пустым, чтобы не менять"
+
+msgid "Secret key used only for server-side token verification. It is never sent to visitors."
+msgstr "Секретный ключ используется только для серверной проверки токена и никогда не передаётся посетителям."
+
+msgid "Security"
+msgstr "Безопасность"
+
+msgid "Server key"
+msgstr "Серверный ключ"
+
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+msgid "SmartCaptcha is not configured."
+msgstr "SmartCaptcha не настроена."
+
+msgid "SmartCaptcha language"
+msgstr "Язык SmartCaptcha"
+
+msgid "The key format does not look like current Yandex SmartCaptcha keys."
+msgstr "Формат ключей не похож на актуальный формат ключей Yandex SmartCaptcha."
+
+msgid "The plugin interface follows the WordPress admin language. The SmartCaptcha widget itself supports the languages provided by Yandex."
+msgstr "Интерфейс плагина следует языку панели управления WordPress. Сам виджет SmartCaptcha поддерживает языки, предоставляемые Yandex."
+
+msgid "The site administrator is responsible for reviewing the applicable Yandex Cloud terms and privacy documentation and for reflecting this processing in the site privacy policy."
+msgstr "Администратор сайта обязан ознакомиться с применимыми условиями Yandex Cloud и документацией о конфиденциальности и отразить такую обработку данных в политике конфиденциальности сайта."
+
+msgid "These options are used only when WooCommerce is active."
+msgstr "Эти параметры используются только при активном WooCommerce."
+
+msgid "This site uses Yandex SmartCaptcha to protect forms from automated abuse and spam. When a protected form is displayed or submitted, technical data required by the service may be transmitted to Yandex Cloud, including the CAPTCHA token and, during server-side verification, the visitor IP address."
+msgstr "Этот сайт использует Yandex SmartCaptcha для защиты форм от автоматизированных атак и спама. При отображении или отправке защищённой формы в Yandex Cloud могут передаваться технические данные, необходимые сервису, включая токен CAPTCHA и, при серверной проверке, IP-адрес посетителя."
+
+msgid "Verification service failure"
+msgstr "Недоступность сервиса проверки"
+
+msgid "WooCommerce protection"
+msgstr "Защита WooCommerce"
+
+msgid "WordPress protection"
+msgstr "Защита WordPress"
+
+msgid "Yandex SmartCaptcha endpoint returned an unexpected HTTP status."
+msgstr "Сервер Yandex SmartCaptcha вернул неожиданный HTTP-статус."
+
+
+msgid "Please confirm that you are not a robot."
+msgstr "Подтвердите, что вы не робот."
+
+msgid "CAPTCHA verification has expired. Please complete it again."
+msgstr "Срок действия проверки CAPTCHA истёк. Пройдите проверку ещё раз."
+
+msgid "CAPTCHA could not be loaded. Check your connection and try again."
+msgstr "Не удалось загрузить CAPTCHA. Проверьте подключение и попробуйте снова."
+
+msgid "CAPTCHA could not be loaded. Please refresh the page and try again."
+msgstr "Не удалось загрузить CAPTCHA. Обновите страницу и попробуйте снова."
+
+msgid "The saved Client key is used to load the real Yandex SmartCaptcha widget here."
+msgstr "Для загрузки реального виджета Yandex SmartCaptcha здесь используется сохранённый ключ клиента."
