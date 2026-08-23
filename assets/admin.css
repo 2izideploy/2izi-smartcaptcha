@@ -1,0 +1,21 @@
+.izi-sc-wrap{max-width:980px}.izi-sc-intro{margin-top:4px}.izi-sc-version{display:inline-block;margin-left:6px;padding:1px 7px;border:1px solid #c3c4c7;border-radius:10px;background:#fff;font-size:11px;color:#50575e;vertical-align:1px}.izi-sc-wrap .form-table{margin-bottom:26px}.izi-sc-wrap .form-table th{width:220px}.izi-sc-wrap h2.title{margin-top:30px;margin-bottom:4px;padding-bottom:8px;border-bottom:1px solid #dcdcde}.izi-sc-wrap h2.title+p{margin-top:6px;color:#646970}.izi-sc-test-result{display:inline-block;margin-left:10px}.izi-sc-test-result.ok{color:#008a20}.izi-sc-test-result.bad{color:#b32d2e}@media(max-width:782px){.izi-sc-wrap .form-table th{width:auto}.izi-sc-test-result{display:block;margin:8px 0 0}}
+
+.izi-sc-admin-preview{max-width:420px;min-height:100px;margin:4px 0 8px}.izi-sc-admin-preview iframe{max-width:100%}@media(max-width:782px){.izi-sc-admin-preview{max-width:100%;overflow:visible}}
+
+
+.izi-sc-developer {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid #dcdcde;
+    max-width: 760px;
+    color: #646970;
+}
+.izi-sc-developer p {
+    margin: 4px 0;
+}
+.izi-sc-developer strong {
+    color: #1d2327;
+}
+.izi-sc-developer a {
+    text-decoration: none;
+}

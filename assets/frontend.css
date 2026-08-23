@@ -1,0 +1,55 @@
+.izi-smartcaptcha-shell {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 18px 0 16px;
+}
+
+.izi-smartcaptcha-container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.izi-smartcaptcha-container iframe {
+    max-width: 100% !important;
+}
+
+.izi-smartcaptcha-status {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.izi-smartcaptcha-status-error {
+    color: #b32d2e;
+}
+
+.izi-smartcaptcha-submit-disabled {
+    cursor: not-allowed !important;
+    opacity: .65;
+}
+
+body.login .izi-smartcaptcha-shell {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+body.login .izi-smartcaptcha-container {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .izi-smartcaptcha-shell {
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    .izi-smartcaptcha-status {
+        font-size: 12px;
+    }
+}
