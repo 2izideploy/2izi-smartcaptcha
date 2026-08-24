@@ -54,8 +54,6 @@ Integrations
 
 * Contact Form 7
 
-Additional integrations may be added in future releases.
-
 Installation
 
 1. Download the plugin package.
@@ -109,10 +107,6 @@ Official project pages:
 * Japanese: https://2izi.ru/ja/projects/smartcaptcha
 * Chinese: https://2izi.ru/cn/projects/smartcaptcha
 * Italian: https://2izi.ru/it/projects/smartcaptcha
-
-Releases
-
-Stable releases are tagged using semantic versioning.
 
 License
 
