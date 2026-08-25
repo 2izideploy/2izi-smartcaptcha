@@ -4,7 +4,7 @@ Tags: captcha, yandex, smartcaptcha, spam protection, security
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,7 +25,8 @@ Features:
 * Server-side token verification.
 * Per-form enable/disable switches.
 * Configurable fail-closed behavior.
-* English and Russian-friendly plugin metadata and search terms.
+* Translation-ready using the standard WordPress.org translation system.
+* Runtime translations are distributed through translate.wordpress.org language packs.
 
 = External service =
 
@@ -33,7 +34,7 @@ This plugin relies on Yandex SmartCaptcha, a third-party service operated throug
 
 A Yandex Cloud account and a configured SmartCaptcha are required. Review the service documentation and applicable legal terms before enabling the plugin:
 * Service documentation: https://yandex.cloud/en/docs/smartcaptcha/
-* Yandex Cloud Terms of Use: https://yandex.com/legal/cloud_terms/
+* Yandex Cloud Terms of Use: https://yandex.com/legal/cloud_terms_smartcaptcha/
 * Yandex Privacy Policy: https://yandex.com/legal/confidential/
 
 == Installation ==
@@ -57,6 +58,11 @@ No. The server key is used only in server-side verification requests. The client
 By default, protected submissions are blocked (fail closed). Administrators can change this behavior in settings, but fail-closed mode is recommended for security-sensitive forms.
 
 == Changelog ==
+
+= 1.0.11 =
+* Strengthened plugin-specific prefixes for PHP declarations, stored options, script handles and JavaScript globals.
+* Updated the Yandex SmartCaptcha terms URL.
+* Removed bundled runtime translation files in preparation for WordPress.org language packs.
 
 = 1.0.10 =
 * Added the dedicated 2IZI SmartCaptcha project page as the Plugin URI.

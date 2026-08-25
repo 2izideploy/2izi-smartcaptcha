@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: 2IZI SmartCaptcha 1.0.10\n"
+"Project-Id-Version: 2IZI SmartCaptcha 1.0.11\n"
 "Report-Msgid-Bugs-To: https://2izi.ru/\n"
 "POT-Creation-Date: 2026-08-23 15:30+1000\n"
 "MIME-Version: 1.0\n"

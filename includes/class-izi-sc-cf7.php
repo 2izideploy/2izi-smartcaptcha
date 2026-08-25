@@ -1,6 +1,6 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-class IZI_SC_CF7 {
+class IZISMFOY_CF7 {
     private $verifier; private $renderer;
     public function __construct($verifier,$renderer){$this->verifier=$verifier;$this->renderer=$renderer;add_action('plugins_loaded',array($this,'hooks'),30);}
     public function hooks(){ $o=$this->verifier->get_options(); if(empty($o['cf7'])||!defined('WPCF7_VERSION')||!$this->verifier->is_configured())return; add_filter('wpcf7_form_elements',array($this,'elements')); add_filter('wpcf7_validate',array($this,'validate'),20,2); }

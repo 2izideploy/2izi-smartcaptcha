@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-final class IZI_SC_Language {
+final class IZISMFOY_Language {
     /**
      * Languages currently supported by Yandex SmartCaptcha.
      *

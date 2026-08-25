@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-class IZI_SC_Core {
+class IZISMFOY_Core {
     private $verifier; private $renderer;
     public function __construct( $verifier, $renderer ) {
         $this->verifier=$verifier; $this->renderer=$renderer;

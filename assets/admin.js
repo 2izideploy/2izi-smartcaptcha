@@ -2,7 +2,7 @@
     'use strict';
 
     function renderPreview() {
-        if (!window.iziSCAdmin || !iziSCAdmin.configured || !iziSCAdmin.siteKey) {
+        if (!window.izismfoyAdmin || !izismfoyAdmin.configured || !izismfoyAdmin.siteKey) {
             return;
         }
 
@@ -12,11 +12,11 @@
         }
 
         var params = {
-            sitekey: iziSCAdmin.siteKey
+            sitekey: izismfoyAdmin.siteKey
         };
 
-        if (iziSCAdmin.language) {
-            params.hl = iziSCAdmin.language;
+        if (izismfoyAdmin.language) {
+            params.hl = izismfoyAdmin.language;
         }
 
         try {
@@ -27,7 +27,7 @@
         }
     }
 
-    window.iziSCAdminCaptchaOnload = renderPreview;
+    window.izismfoyAdminCaptchaOnload = renderPreview;
 
     document.addEventListener('DOMContentLoaded', function () {
         if (window.smartCaptcha) {

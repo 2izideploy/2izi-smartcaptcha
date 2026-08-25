@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       2IZI SmartCaptcha for Yandex
  * Description:       Adds Yandex SmartCaptcha protection to WordPress core forms, WooCommerce and Contact Form 7.
- * Version:           1.0.10
+ * Version:           1.0.11
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            2IZI
@@ -18,20 +18,20 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'IZI_SC_VERSION', '1.0.10' );
-define( 'IZI_SC_FILE', __FILE__ );
-define( 'IZI_SC_DIR', plugin_dir_path( __FILE__ ) );
-define( 'IZI_SC_URL', plugin_dir_url( __FILE__ ) );
+define( 'IZISMFOY_VERSION', '1.0.11' );
+define( 'IZISMFOY_FILE', __FILE__ );
+define( 'IZISMFOY_DIR', plugin_dir_path( __FILE__ ) );
+define( 'IZISMFOY_URL', plugin_dir_url( __FILE__ ) );
 
-require_once IZI_SC_DIR . 'includes/class-izi-sc-language.php';
-require_once IZI_SC_DIR . 'includes/class-izi-sc-verifier.php';
-require_once IZI_SC_DIR . 'includes/class-izi-sc-renderer.php';
-require_once IZI_SC_DIR . 'includes/class-izi-sc-settings.php';
-require_once IZI_SC_DIR . 'includes/class-izi-sc-core.php';
-require_once IZI_SC_DIR . 'includes/class-izi-sc-woocommerce.php';
-require_once IZI_SC_DIR . 'includes/class-izi-sc-cf7.php';
+require_once IZISMFOY_DIR . 'includes/class-izi-sc-language.php';
+require_once IZISMFOY_DIR . 'includes/class-izi-sc-verifier.php';
+require_once IZISMFOY_DIR . 'includes/class-izi-sc-renderer.php';
+require_once IZISMFOY_DIR . 'includes/class-izi-sc-settings.php';
+require_once IZISMFOY_DIR . 'includes/class-izi-sc-core.php';
+require_once IZISMFOY_DIR . 'includes/class-izi-sc-woocommerce.php';
+require_once IZISMFOY_DIR . 'includes/class-izi-sc-cf7.php';
 
-final class IZI_SmartCaptcha {
+final class IZISMFOY_SmartCaptcha {
     private static $instance = null;
 
     public static function instance() {
@@ -46,13 +46,13 @@ final class IZI_SmartCaptcha {
     }
 
     public function init() {
-        $verifier = new IZI_SC_Verifier();
-        $renderer = new IZI_SC_Renderer();
+        $verifier = new IZISMFOY_Verifier();
+        $renderer = new IZISMFOY_Renderer();
 
-        new IZI_SC_Settings( $verifier );
-        new IZI_SC_Core( $verifier, $renderer );
-        new IZI_SC_WooCommerce( $verifier, $renderer );
-        new IZI_SC_CF7( $verifier, $renderer );
+        new IZISMFOY_Settings( $verifier );
+        new IZISMFOY_Core( $verifier, $renderer );
+        new IZISMFOY_WooCommerce( $verifier, $renderer );
+        new IZISMFOY_CF7( $verifier, $renderer );
 
         add_action( 'admin_init', array( $this, 'privacy_policy_content' ) );
     }
@@ -69,4 +69,4 @@ final class IZI_SmartCaptcha {
     }
 }
 
-IZI_SmartCaptcha::instance();
+IZISMFOY_SmartCaptcha::instance();

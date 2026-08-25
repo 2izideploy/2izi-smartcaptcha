@@ -1,7 +1,7 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-class IZI_SC_Settings {
+class IZISMFOY_Settings {
     private $verifier;
 
     public function __construct( $verifier ) {
@@ -22,11 +22,11 @@ class IZI_SC_Settings {
     }
 
     public function register() {
-        register_setting( 'izi_sc', 'izi_sc_options', array( $this, 'sanitize' ) );
+        register_setting( 'izismfoy', 'izismfoy_options', array( $this, 'sanitize' ) );
     }
 
     public function sanitize( $input ) {
-        $old = get_option( 'izi_sc_options', array() );
+        $old = get_option( 'izismfoy_options', array() );
         $out = array();
         $out['client_key'] = isset( $input['client_key'] ) ? sanitize_text_field( $input['client_key'] ) : '';
         $new_server = isset( $input['server_key'] ) ? trim( (string) $input['server_key'] ) : '';
@@ -36,28 +36,28 @@ class IZI_SC_Settings {
         foreach ( array( 'core_login','core_register','core_lostpassword','core_comments','woo_login','woo_register','woo_lostpassword','woo_checkout','woo_review','cf7','fail_closed' ) as $key ) {
             $out[ $key ] = empty( $input[ $key ] ) ? 0 : 1;
         }
-        add_settings_error( 'izi_sc_messages', 'izi_sc_saved', __( 'Settings saved.', '2izi-smartcaptcha' ), 'updated' );
+        add_settings_error( 'izismfoy_messages', 'izismfoy_saved', __( 'Settings saved.', '2izi-smartcaptcha' ), 'updated' );
         return $out;
     }
 
     public function assets( $hook ) {
         if ( 'settings_page_2izi-smartcaptcha' !== $hook ) { return; }
-        wp_enqueue_style( 'izi-sc-admin', IZI_SC_URL . 'assets/admin.css', array(), IZI_SC_VERSION );
-        wp_enqueue_script( 'izi-sc-admin', IZI_SC_URL . 'assets/admin.js', array(), IZI_SC_VERSION, true );
+        wp_enqueue_style( 'izismfoy-admin', IZISMFOY_URL . 'assets/admin.css', array(), IZISMFOY_VERSION );
+        wp_enqueue_script( 'izismfoy-admin', IZISMFOY_URL . 'assets/admin.js', array(), IZISMFOY_VERSION, true );
 
         $o = $this->verifier->get_options();
-        wp_localize_script( 'izi-sc-admin', 'iziSCAdmin', array(
+        wp_localize_script( 'izismfoy-admin', 'izismfoyAdmin', array(
             'configured' => $this->verifier->is_configured(),
             'siteKey'    => isset( $o['client_key'] ) ? $o['client_key'] : '',
-            'language'   => IZI_SC_Language::resolve( isset( $o['language'] ) ? $o['language'] : '' ),
+            'language'   => IZISMFOY_Language::resolve( isset( $o['language'] ) ? $o['language'] : '' ),
         ) );
 
         if ( $this->verifier->is_configured() ) {
             wp_enqueue_script(
-                'izi-sc-admin-yandex',
-                'https://smartcaptcha.cloud.yandex.ru/captcha.js?render=onload&onload=iziSCAdminCaptchaOnload',
-                array( 'izi-sc-admin' ),
-                IZI_SC_VERSION,
+                'izismfoy-admin-yandex',
+                'https://smartcaptcha.cloud.yandex.ru/captcha.js?render=onload&onload=izismfoyAdminCaptchaOnload',
+                array( 'izismfoy-admin' ),
+                IZISMFOY_VERSION,
                 true
             );
         }
@@ -67,7 +67,7 @@ class IZI_SC_Settings {
     private function checkbox_row( $name, $label, $o, $desc = '' ) {
         ?>
         <label for="izi-sc-<?php echo esc_attr( $name ); ?>">
-            <input id="izi-sc-<?php echo esc_attr( $name ); ?>" type="checkbox" name="izi_sc_options[<?php echo esc_attr( $name ); ?>]" value="1" <?php checked( ! empty( $o[ $name ] ) ); ?>>
+            <input id="izi-sc-<?php echo esc_attr( $name ); ?>" type="checkbox" name="izismfoy_options[<?php echo esc_attr( $name ); ?>]" value="1" <?php checked( ! empty( $o[ $name ] ) ); ?>>
             <?php echo esc_html( $label ); ?>
         </label>
         <?php if ( $desc ) : ?>
@@ -88,37 +88,37 @@ class IZI_SC_Settings {
         ?>
         <div class="wrap izi-sc-wrap">
             <h1><?php esc_html_e( '2IZI SmartCaptcha for Yandex', '2izi-smartcaptcha' ); ?></h1>
-            <p class="description izi-sc-intro"><?php esc_html_e( 'Protect WordPress forms with Yandex SmartCaptcha.', '2izi-smartcaptcha' ); ?> <span class="izi-sc-version">v<?php echo esc_html( IZI_SC_VERSION ); ?></span></p>
+            <p class="description izi-sc-intro"><?php esc_html_e( 'Protect WordPress forms with Yandex SmartCaptcha.', '2izi-smartcaptcha' ); ?> <span class="izi-sc-version">v<?php echo esc_html( IZISMFOY_VERSION ); ?></span></p>
 
-            <?php settings_errors( 'izi_sc_messages' ); ?>
+            <?php settings_errors( 'izismfoy_messages' ); ?>
 
             <?php if ( ! $this->verifier->is_configured() ) : ?>
                 <div class="notice notice-warning inline"><p><?php esc_html_e( 'Enter the Client key and Server key from Yandex SmartCaptcha to enable protection.', '2izi-smartcaptcha' ); ?></p></div>
             <?php endif; ?>
 
             <form method="post" action="options.php">
-                <?php settings_fields( 'izi_sc' ); ?>
+                <?php settings_fields( 'izismfoy' ); ?>
 
                 <?php $this->section_heading( __( 'Connection', '2izi-smartcaptcha' ), __( 'Keys are created in the Yandex Cloud SmartCaptcha console.', '2izi-smartcaptcha' ) ); ?>
                 <table class="form-table" role="presentation">
                     <tr>
                         <th scope="row"><label for="izi-sc-client-key"><?php esc_html_e( 'Client key', '2izi-smartcaptcha' ); ?></label></th>
                         <td>
-                            <input id="izi-sc-client-key" class="regular-text code" type="text" name="izi_sc_options[client_key]" value="<?php echo esc_attr( $o['client_key'] ); ?>" autocomplete="off">
+                            <input id="izi-sc-client-key" class="regular-text code" type="text" name="izismfoy_options[client_key]" value="<?php echo esc_attr( $o['client_key'] ); ?>" autocomplete="off">
                             <p class="description"><?php esc_html_e( 'Public site key used by the SmartCaptcha widget.', '2izi-smartcaptcha' ); ?></p>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row"><label for="izi-sc-server-key"><?php esc_html_e( 'Server key', '2izi-smartcaptcha' ); ?></label></th>
                         <td>
-                            <input id="izi-sc-server-key" class="regular-text code" type="password" name="izi_sc_options[server_key]" value="" placeholder="<?php echo empty( $o['server_key'] ) ? '' : esc_attr__( 'Saved — leave blank to keep', '2izi-smartcaptcha' ); ?>" autocomplete="new-password">
+                            <input id="izi-sc-server-key" class="regular-text code" type="password" name="izismfoy_options[server_key]" value="" placeholder="<?php echo empty( $o['server_key'] ) ? '' : esc_attr__( 'Saved — leave blank to keep', '2izi-smartcaptcha' ); ?>" autocomplete="new-password">
                             <p class="description"><?php esc_html_e( 'Secret key used only for server-side token verification. It is never sent to visitors.', '2izi-smartcaptcha' ); ?></p>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row"><label for="izi-sc-language"><?php esc_html_e( 'SmartCaptcha language', '2izi-smartcaptcha' ); ?></label></th>
                         <td>
-                            <select id="izi-sc-language" name="izi_sc_options[language]">
+                            <select id="izi-sc-language" name="izismfoy_options[language]">
                                 <?php
                                 $languages = array(
                                     ''   => __( 'Automatic — follow WordPress language', '2izi-smartcaptcha' ),

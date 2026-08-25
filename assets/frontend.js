@@ -5,8 +5,8 @@
     var widgetState = new Map();
 
     function getL10n(key, fallback) {
-        if (window.iziSmartCaptchaL10n && window.iziSmartCaptchaL10n[key]) {
-            return window.iziSmartCaptchaL10n[key];
+        if (window.izismfoySmartCaptchaL10n && window.izismfoySmartCaptchaL10n[key]) {
+            return window.izismfoySmartCaptchaL10n[key];
         }
         return fallback;
     }
@@ -150,7 +150,7 @@
         document.querySelectorAll('.izi-smartcaptcha-container').forEach(renderContainer);
     }
 
-    window.iziSmartCaptchaOnload = init;
+    window.izismfoySmartCaptchaOnload = init;
 
     document.addEventListener('DOMContentLoaded', function () {
         if (window.smartCaptcha) {
