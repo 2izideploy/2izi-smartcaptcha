@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       2IZI SmartCaptcha for Yandex
  * Description:       Adds Yandex SmartCaptcha protection to WordPress core forms, WooCommerce and Contact Form 7.
- * Version:           1.0.11
+ * Version:           1.0.12
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            2IZI
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'IZISMFOY_VERSION', '1.0.11' );
+define( 'IZISMFOY_VERSION', '1.0.12' );
 define( 'IZISMFOY_FILE', __FILE__ );
 define( 'IZISMFOY_DIR', plugin_dir_path( __FILE__ ) );
 define( 'IZISMFOY_URL', plugin_dir_url( __FILE__ ) );

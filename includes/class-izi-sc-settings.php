@@ -99,7 +99,22 @@ class IZISMFOY_Settings {
             <form method="post" action="options.php">
                 <?php settings_fields( 'izismfoy' ); ?>
 
-                <?php $this->section_heading( __( 'Connection', '2izi-smartcaptcha' ), __( 'Keys are created in the Yandex Cloud SmartCaptcha console.', '2izi-smartcaptcha' ) ); ?>
+                <?php
+                $settings_locale = function_exists( 'determine_locale' ) ? determine_locale() : get_locale();
+                $is_russian      = 0 === strpos( strtolower( (string) $settings_locale ), 'ru' );
+                $yandex_service  = $is_russian
+                    ? 'https://yandex.cloud/ru/services/smartcaptcha'
+                    : 'https://yandex.cloud/en/services/smartcaptcha';
+                $yandex_keys     = $is_russian
+                    ? 'https://yandex.cloud/ru/docs/smartcaptcha/operations/get-keys'
+                    : 'https://yandex.cloud/en/docs/smartcaptcha/operations/get-keys';
+                ?>
+                <?php $this->section_heading( __( 'Connection', '2izi-smartcaptcha' ), __( 'Create SmartCaptcha in Yandex Cloud, then copy its Client key and Server key here.', '2izi-smartcaptcha' ) ); ?>
+                <p class="izi-sc-yandex-links">
+                    <a href="<?php echo esc_url( $yandex_service ); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Create SmartCaptcha in Yandex Cloud', '2izi-smartcaptcha' ); ?> ↗</a>
+                    <span aria-hidden="true"> &middot; </span>
+                    <a href="<?php echo esc_url( $yandex_keys ); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'How to get the keys', '2izi-smartcaptcha' ); ?> ↗</a>
+                </p>
                 <table class="form-table" role="presentation">
                     <tr>
                         <th scope="row"><label for="izi-sc-client-key"><?php esc_html_e( 'Client key', '2izi-smartcaptcha' ); ?></label></th>

@@ -4,17 +4,16 @@ Tags: captcha, yandex, smartcaptcha, spam protection, security
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Yandex SmartCaptcha / Яндекс Капча protection for WordPress, WooCommerce and Contact Form 7.
+Yandex SmartCaptcha protection for WordPress, WooCommerce and Contact Form 7.
 
 == Description ==
 
 2IZI SmartCaptcha for Yandex adds server-validated Yandex SmartCaptcha protection to common WordPress forms. Developed and maintained by 2IZI. Project page: https://2izi.ru/en/projects/smartcaptcha
 
-Яндекс Капча для WordPress: защита входа, регистрации, восстановления пароля, комментариев, WooCommerce и Contact Form 7 с серверной проверкой токена.
 
 Features:
 * WordPress login, registration and lost-password protection.
@@ -41,10 +40,11 @@ A Yandex Cloud account and a configured SmartCaptcha are required. Review the se
 
 1. Upload the plugin ZIP in Plugins > Add New > Upload Plugin, or install it from WordPress.org when available.
 2. Activate the plugin.
-3. Create a SmartCaptcha in Yandex Cloud and copy its Client key and Server key.
-4. Open Settings > 2IZI SmartCaptcha.
-5. Save both keys and enable the forms you want to protect. WooCommerce checkout protection currently targets the classic checkout flow; test it before production use.
-6. Test login and other protected flows in a separate browser/private window before logging out of the administrator session.
+3. Create a SmartCaptcha in Yandex Cloud: https://yandex.cloud/en/services/smartcaptcha
+4. Copy its Client key and Server key. Key instructions: https://yandex.cloud/en/docs/smartcaptcha/operations/get-keys
+5. Open Settings > 2IZI SmartCaptcha.
+6. Save both keys and enable the forms you want to protect. WooCommerce checkout protection currently targets the classic checkout flow; test it before production use.
+7. Test login and other protected flows in a separate browser/private window before logging out of the administrator session.
 
 == Frequently Asked Questions ==
 
@@ -58,6 +58,11 @@ No. The server key is used only in server-side verification requests. The client
 By default, protected submissions are blocked (fail closed). Administrators can change this behavior in settings, but fail-closed mode is recommended for security-sensitive forms.
 
 == Changelog ==
+
+= 1.0.12 =
+* Added direct links in plugin settings to create Yandex SmartCaptcha and obtain Client/Server keys.
+* Added locale-aware Yandex Cloud links for Russian and other WordPress admin locales.
+* Removed Russian text from the source English readme so translations are handled through translate.wordpress.org.
 
 = 1.0.11 =
 * Strengthened plugin-specific prefixes for PHP declarations, stored options, script handles and JavaScript globals.

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: 2IZI SmartCaptcha 1.0.11\n"
+"Project-Id-Version: 2IZI SmartCaptcha 1.0.12\n"
 "Report-Msgid-Bugs-To: https://2izi.ru/\n"
 "POT-Creation-Date: 2026-08-23 15:30+1000\n"
 "MIME-Version: 1.0\n"
@@ -196,4 +196,13 @@ msgid "CAPTCHA could not be loaded. Please refresh the page and try again."
 msgstr ""
 
 msgid "The saved Client key is used to load the real Yandex SmartCaptcha widget here."
+msgstr ""
+
+msgid "Create SmartCaptcha in Yandex Cloud, then copy its Client key and Server key here."
+msgstr ""
+
+msgid "Create SmartCaptcha in Yandex Cloud"
+msgstr ""
+
+msgid "How to get the keys"
 msgstr ""
